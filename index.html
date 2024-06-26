@@ -103,7 +103,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/Eric-nguyen1402/autonomous-navigation.github.io" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -257,13 +257,14 @@
               </div>
               <br>
               <h2 class="subtitle has-text-centered">
-                In this project, we investigate the impact of varying Weighted Damped Least Squares (WDLS) on the performance of the mobile manipulator system. We present three experimental
-                scenarios to illustrate the effects. The equal weights are assigned to both the arm and the mobile base. Consequently,
-                the controller allocates comparable efforts to both components in accomplishing the task. However, this uniform
-                distribution of control can lead to occasional instability. Specifically, in cases where it would be more appropriate
-                to prioritize the movement of the base over the arm, the controller tends to utilize both components simultaneously.
-                Similarly, when the arm should be given more preference, the controller still relies on the base. The joint velocity plot
-                in the plot depicts the balanced velocities sent to the arm and base.
+                One of the system’s key strengths lies in its integration of lidar sensing and grid mapping. Lidar sensors provide
+                detailed and real-time perception data, allowing for accurate representations of the environment. The grid mapping
+                module effectively converts the lidar data into a grid map, providing a reliable basis for path planning and motion control. Lidar data enhances the system’s perception capabilities and enables the robot to navigate complex and
+                dynamic environments. Employing the RRT* algorithm as the core planner offers several advantages. RRT* efficiently explores the high-
+                dimensional configuration space and generates optimal paths between the start and goal positions. Furthermore, including a path validity checker ensures
+                the feasibility and safety of generated paths. By considering static and dynamic obstacles, the path validity checker
+                verifies the collision-free nature of the path the planner produces. This feature significantly reduces the risk of collisions and improves the system’s overall reliability. The
+                motion control component based on the Dynamic Window Approach (DWA) provides agile and reactive motion control for the mobile robot. 
               </h2>
             </div>
             <br>
