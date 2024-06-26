@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Autonomous Navigation of Mobile Robots: Integrating Lidar, RRT*,
+    and Frontier-Based Algorithms for Path Planning, Exploration, and
+    Motion Control</title>
+  <link rel="icon" type="image/x-icon" href="static/pdfs/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Autonomous Navigation of Mobile Robots: Integrating Lidar, RRT*,
+              and Frontier-Based Algorithms for Path Planning, Exploration, and
+              Motion Control</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=T_LryjgAAAAJ&hl=en" target="_blank">Huy Nguyen</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/" target="_blank">Million Angesom</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=4W1u1KMAAAAJ&hl=en" target="_blank">Mohsin Kabir</a><sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=PrYvto8AAAAJ&hl=en" target="_blank">Narcı́s Palomeras</a><sup>1</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>University of Girona</span>&nbsp;&nbsp;
+                    <span class="author-block"><sup>2</sup>EMJM in Intelligent Field Robotic Systems</span>&nbsp;&nbsp;
+                  </div>
+                  <div class="logo-container">
+                    <img src="./static/images/udg.png" />
+                    <img src="./static/images/ifros.png" />
+                  </div>
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links"> -->
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://youtu.be/XZIpZKQPmBY" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://drive.google.com/file/d/1c_-AcfYp6NJsLPngxOh2b0vQFReeB8I_/view" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Autonomous mobile robots have emerged as a significant area of research and development, with potential applications
+            ranging from warehouse automation to planetary exploration. One critical aspect of autonomous mobile robots is their ability to
+            navigate in complex and dynamic environments while efficiently exploring unknown areas. This project presents a comprehensive
+            approach that combines Lidar sensing, Rapidly-exploring Random Trees*(RRT*), and Frontier-Based algorithms to achieve enhanced
+            path planning, exploration, and motion control for mobile robots. The integration of these techniques addresses the challenges of
+            obstacle avoidance, real-time decision-making, and efficient exploration, leading to improved autonomy and reliability in robotic
+            systems. The experimental evaluation demonstrates the effectiveness and performance of the proposed approach, showcasing its
+            potential for a wide range of applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper video. -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-3">Video</h2>
+    <div class="publication-video">
+      <iframe src="https://www.youtube.com/embed/1Nbt5OuECqQ?modestbranding=1&autohide=1&showinfo=0&controls=1"
+        frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Paper video. -->
+<div class="columns is-centered has-text-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-3">Simulation</h2>
+    <div class="publication-video">
+      <iframe src="https://www.youtube.com/embed/NbHkh6VrP5M?modestbranding=1&autohide=1&showinfo=0&controls=1"
+        frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End teaser video -->
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Experiment in Realsense D400 Series</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-D405">
+          <img src="./static/images/D405.png" id="D405" alt="Blue Block" height="100%">
+          <div class="subtitle has-text-centered">D405</div>
+        </div>
+        <div class="item item-D415">
+          <img src="./static/images/D415.png" id="D415" alt="Metal" height="100%">
+          <div class="subtitle has-text-centered">D415</div>
+        </div>
+        <div class="item item-D435">
+          <img src="./static/images/D435.png" id="D435" alt="Orange Block" height="100%">
+          <div class="subtitle has-text-centered">D435</div>
+        </div>
+        <div class="item item-D435i">
+          <img src="./static/images/D435i.png" id="D435i" alt="Plier" height="100%">
+          <div class="subtitle has-text-centered">D435i</div>
+        </div>
+        <div class="item item-D455">
+          <img src="./static/images/D455.png" id="D455" alt="Scissor" height="100%">
+          <div class="subtitle has-text-centered">D455</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+      <!-- Animation. -->
+      <div class="rows is-centered ">
+        <div class="row is-full-width">
+            <!--/ Methodology. -->
+            <h2 class="title is-3">Methodology</h2>
+
+            <div class="container">
+              <div class="columns is-vcentered is-centered">
+                <img src="./static/images/plan.drawio.png" alt="functional_block_diagram" class="image-fit" />
+                </br>
+              </div>
+              <br>
+              <h2 class="subtitle has-text-centered">
+                Initially, lidar data is fed into the grid mapper, generating a grid map
+                representation. Concurrently, localization algorithms continuously provide position transformations in the world frame.
+                The grid map is connected to the path validity checker,
+                ensuring that the planned paths are collision-free. The exploration algorithms, employing a frontier-based strategy,
+                provide the next best view point to explore the environment
+                as a goal point to the planner. The planner, implemented
+                as RRT*, plans a path and verifies the feasibility of the
+                generated path through the path validity checker. Valid
+                paths between the start and goal positions are then passed
+                to the motion controller. The motion controller, utilizing the
+                Dynamic Window Approach (DWA), calculates velocities
+                for the actuators, enabling the robot’s movement. The subsequent sections will illustrate each component and method
+                of the system.
+              </h2>
+            </div>
+            <br>
+            <br>
+            <!--/ Results. -->
+            <h2 class="title is-3">Results</h2>
+            <div class="container">
+              <div class="columns is-vcentered is-centered">
+                <div class="column is-narrow">
+                  <img src="./static/images/frontiers.png" alt="results1" class="image-fit"/>
+                  <div class="subtitle has-text-centered">Frontier centroids detected at the start of exploration</div>
+                </div>
+                <div class="column is-narrow">
+                  <img src="./static/images/frontiers4.png" alt="results2" class="image-fit"/>
+                  <div class="subtitle has-text-centered">Detected frontier centroids during the exploration process</div>
+                </div>
+              </div>
+              <br>
+              <h2 class="subtitle has-text-centered">
+                In this project, we investigate the impact of varying Weighted Damped Least Squares (WDLS) on the performance of the mobile manipulator system. We present three experimental
+                scenarios to illustrate the effects. The equal weights are assigned to both the arm and the mobile base. Consequently,
+                the controller allocates comparable efforts to both components in accomplishing the task. However, this uniform
+                distribution of control can lead to occasional instability. Specifically, in cases where it would be more appropriate
+                to prioritize the movement of the base over the arm, the controller tends to utilize both components simultaneously.
+                Similarly, when the arm should be given more preference, the controller still relies on the base. The joint velocity plot
+                in the plot depicts the balanced velocities sent to the arm and base.
+              </h2>
+            </div>
+            <br>
+            <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+<section class="section" id="acknowledgements">
+  <div class="container content is-max-desktop">
+    <h2 class="title">Acknowledgements</h2>
+    <p>This project is part of the IFRoS program course. If you are interested in the project or intend to use it for any purpose, please contact the author first.<p>
+    <p>We borrow the page template from  <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Special thanks to them!
+      <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+      Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</section>
+
+  <!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            We borrow the page template from  <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Special thanks to them!
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
